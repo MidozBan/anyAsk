@@ -1,0 +1,17 @@
+$cor-de-fundo:#f8f8f8;
+$cor-de-texto:#29292e;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:$cor-de-fundo;
+    color:$cor-de-texto;
+}
+
+body, input, button, textarea {
+    font: 400 16px 'Roboto', sans-serif; 
+}

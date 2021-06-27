@@ -1,0 +1,39 @@
+$cor-branco: #fff;
+$cor-roxo:#0575E6;
+.button {
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    background: $cor-roxo;
+    color: $cor-branco;
+    padding: 0 32px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border:0;
+    cursor: pointer;
+    transition: filter 0.2s;
+    img {
+        margin-right: 8px;
+
+    }
+
+    &.outlined {
+        background: #fff;
+        border: 1px solid $cor-roxo;
+        color: $cor-roxo;
+    }
+    &:not(:disabled):hover { 
+        filter: brightness(0.9);
+    }
+    &:disabled {
+        opacity: 0.6;
+        cursor:not-allowed;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        padding: 0 24px;
+    }
+}
